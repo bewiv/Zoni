@@ -1,0 +1,682 @@
+/*coding by Marouane Adnane
+  url: www.bewiv.com
+*/
+/*
+ * 	Globale classes 
+ */
+* {
+	margin: 0; padding: 0;
+	line-height: 12px;
+	font-size: 100%;
+}
+.left_acti {float: left;}
+.right_acti {float: right;}
+.bold {font-weight: bold;}
+.clear {clear: both;}
+a {text-decoration: none;}
+ul {list-style: none;}
+
+/*
+* header
+*/
+header{
+	padding-top: 84px;
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+}
+header #logo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 45px;
+	border:3px solid #fff;
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+}
+
+/* menu */
+#menu{
+	margin-top: 57px;
+}
+.navbar{
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 18px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	font-family: Myriad Pro;
+	margin-right: 38px;
+}
+
+hr{
+	position: fixed;
+	height: 2px;
+	background-color: #ff0000;
+	top: 50%;
+	margin-top: -1px;
+	left: 0; right: 0;
+}
+/*
+*slide
+*/
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 1098px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+#slider{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 0;
+	 padding-right: 0;
+}
+.main-text
+{
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+#title1{
+	font-family: Myriad Pro;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+#title2{
+	font-family: Myriad Pro;
+	font-size: 70px;
+	text-transform: uppercase;
+}
+#title3{
+	font-family: Myriad Pro;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+#imgcomp{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	z-index: 0;
+	bottom: 0px;
+}
+.btn_orange{
+	background-color: #f39c12;
+	border-color: #f39c12;
+	border-radius: 0px;
+	font-family: Myriad Pro;
+	font-size: 15px;
+	/*margin-top: 90px;*/
+	text-transform: uppercase; 
+	color: #fff;
+}
+.btn_orange:hover{
+	background-color: #fff;
+	border-color: #f39c12;
+	color: #f39c12;
+}
+.carousel-indicators {
+bottom: 50px;
+}
+
+/*
+* About
+*/
+.item_menu{
+	margin: 60px 0 30px 0;
+}
+.title_container{
+	font-size: 30px;
+	color: #000;
+	line-height: 30px;
+	font-family: Myriad Pro;
+	border-right: 5px solid #f39c12;
+	text-align: right;
+	padding-right: 24px;
+}
+.text_item_menu{
+	font-family: Myriad Pro;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 16px;
+}
+
+#about_marg{margin: 130px 0 0 0;
+	padding-bottom: 120px;
+	border-bottom: 2px solid #e6e6e6;
+	}
+#about_marg #img_right img{margin-left: 36px; }
+
+.title_about_middle{
+	font-size: 20px;
+	font-family: Myriad Pro;
+	color: #000;
+	margin-bottom: 26px; 
+}
+.subtitle_about_middle{
+	font-size: 20px;
+	font-family: Myriad Pro;
+	color: #e74c3c;
+	line-height: 25px;
+	margin-bottom: 28px;
+}
+.text_about_middle{
+	font-size: 16px;
+	line-height: 20px;
+	font-family: Myriad Pro;
+	color: #737373; 
+}
+#about_2{
+	margin-top: 120px;
+}
+.statistic{
+	margin-top: 41px;
+	font-size: 16px;
+	font-family: Myriad Pro;
+	text-transform: uppercase;
+}
+.progress{
+	margin-top: 12px;
+	border-radius: 0;
+	height: 10px;
+}
+.progress-bar{
+	background-color: #f39c12;
+	height: 10px;
+}
+
+/* row de body image */
+.rowbar_img{
+	width: 100%;
+	text-align: center;
+	background-image: url("../images/bg_body_1.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	height: 700px;
+	margin-left: 0; 
+    margin-right: 0; 
+}
+.title_bg_img{
+	font-family: Myriad Pro;
+	font-size: 45px;
+	color: #fff;
+	/*position: relative;
+	/*bottom: 254px;*/
+	text-align: center;
+	/*width: 56%;*/
+	line-height: 45px;
+	/*margin-left: 25%;*/
+	margin-top: 18%;
+	padding: 33px;   
+	position: relative;
+}
+.title_bg_img::after{
+	content: "";
+	display: block;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-right: -25px;
+	height: 1px;
+	border-bottom: #f39c12 solid 4px;
+}
+.title_bg_img span{
+	font-size: 110px;
+	font-family: Myriad Pro;
+}
+.name{
+	font-size: 24px;
+	font-family: Myriad Pro;
+	color: #fff;
+	padding: 33px;
+}
+
+/*
+* Team
+*/
+#team_profil{
+	margin-top: 150px;
+}
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 0 solid #fff;
+	border-radius: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	text-align: center;
+	position: relative;
+	border-top: 4px solid transparent;
+}
+.thumbnail:hover{
+	border-top: 4px solid #f39c12;
+	background-color: #f0f0f0;
+}
+.thumbnail .caption h3{
+	font-family: Myriad Pro;
+	color: #000;
+	text-transform: uppercase;
+}
+.thumbnail .caption h5{
+	font-family: Myriad Pro;
+	color: #999999;
+}
+.thumbnail .caption .name_profile::after{
+	content: "";
+	display: block;
+	width: 20px;
+	position: absolute;
+	right: 50%;
+	margin-right: -10px;
+	height: 1px;
+	border-bottom: #cccccc solid 4px;
+}
+.thumbnail .caption p{
+	padding: 18px 0 0 0;
+	color: #737373;
+	font-size: 16px;
+	font-family: Myriad Pro;
+	line-height: 25px;
+}
+.thumbnail .caption #socials{
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.thumbnail .caption #socials ul li a {
+	font-size: 0; 
+	height: 18px; 
+	width: 18px; 
+	display: inline-block; 
+	background-position: 0 0; 
+	background-repeat: no-repeat;
+	padding: 24px 5px 0 36px;
+	float: left;
+}
+#socials .facebook a{
+	background-image: url("../images/icons/soc_facebook.png");
+}
+#socials .facebook a:hover{
+	background-image: url("../images/icons/soc_facebook_hover.png");
+}
+#socials .twitter a{
+	background-image: url("../images/icons/soc_twitter.png");
+}
+#socials .twitter a:hover{
+	background-image: url("../images/icons/soc_twitter_hover.png");
+}
+#socials .dribble a{
+	background-image: url("../images/icons/soc_dribble.png");
+}
+#socials .dribble a:hover{
+	background-image: url("../images/icons/soc_dribble_hover.png");
+}
+#socials .linkind a{
+	background-image: url("../images/icons/soc_linkind.png");
+}
+#socials .linkind a:hover{
+	background-image: url("../images/icons/soc_linkind_hover.png");
+}
+
+/*
+* bare 2
+*/
+.icon_state{
+	font-size: 34px;
+	width: 165px;
+	height: 165px;
+	line-height: 165px;
+	border-radius: 100%;
+	border: 2px solid #f39c12;
+	color: #fff;
+	margin: 0 auto;
+}
+.icon_state:hover{
+	border: 2px solid #fff;
+}
+.all_icons{
+	margin-top: 150px;
+}
+.calcul_num{
+	font-size: 45px;
+	font-family: Myriad Pro;
+	color: #fff;
+	line-height: 45px;
+	padding: 36px 4px 15px 4px;
+	font-weight: bold;
+}
+.calcul_text{
+	font-size: 25px;
+	font-family: Myriad Pro;
+	color: #fff;
+	line-height: 25px;
+}
+
+/*
+* Services
+*/
+.col3{
+	text-align: center;
+	padding: 150px 0 30px 0;
+}
+#services .col3 .icon_state{
+	color: #0d0d0d;
+}
+#services .col3 .icon_state:hover{
+	color: #fff;
+	background-color: #f39c12;
+	border: 2px solid #f39c12;
+}
+.title_state{
+	font-size: 20px;
+	font-family: Myriad Pro;
+	color: #0d0d0d;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 27px;
+}
+.desc_state{
+	font-size: 20px;
+	font-family: Myriad Pro;
+	color: #737373;
+	line-height: 20px;
+}
+#services .item_menu .border::after{
+	border-bottom: 2px solid #e6e6e6;
+	width: 100%;
+	padding-top: 100px ;
+}
+#services .col3 .carre{
+	border-radius: 0;
+}
+/* table price*/
+ .plan:hover{
+  background-color: #e6e6e6;
+}
+ .pricing-table{
+ 	padding-top: 150px;
+ }
+.plan{
+  padding-bottom: 20px;
+  margin-left:0px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+} 
+.plan-name{
+ 	background-color: #f39c12;
+ 	padding: 20px;
+}
+.plan .title_state{
+	color: #fff;
+	padding: 15px;
+}
+.plan-name .title_state::after{
+	content: "";
+	display: block;
+	width: 50px;
+	bottom: 0;
+	right: 50%;
+	margin-right: -25px;
+	height: 1px;
+	border-bottom: #fff solid 2px;
+	margin: 0 auto;
+	padding: 5px;
+}
+.plan .price{
+	color: #fff;
+	font-family: Myriad Pro;
+	font-size: 22px;
+}
+.pricing-table .plan .plan-name span{
+  font-size: 20px;
+}
+.pricing-table .plan ul{
+  list-style: none;
+  margin: 0;
+}
+.pricing-table .plan ul li.plan-feature{
+  padding: 15px 10px;
+  border-top: 1px solid #c5c8c0;
+}
+.pricing-three-column{
+  margin: 0 auto;
+  width: 80%;
+} 
+.plan-mouseover .plan-name{
+  background-color: #4e9a06 !important;
+}
+.btn-plan-select{
+  font-size: 18px;
+}
+.pricing-table .col-md-4{
+	padding-right: 0;
+	padding-left: 0;
+}
+.plan-feature{
+	color: #737373;
+	font-family: Myriad Pro;
+	font-size: 15px;
+}
+
+/* bar 3 */
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.pos_someone{
+	margin-top: 125px;
+}
+.someone{
+	font-size: 24px;
+	line-height: 24px;
+	font-family: Myriad Pro;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+.someone::after{
+	content: "";
+	display: block;
+	width: 50px;
+	bottom: 0;
+	right: 50%;
+	margin-right: -25px;
+	height: 1px;
+	border-bottom: #f39c12 solid 4px;
+	margin: 0 auto;
+	padding: 8px 0 5px 0;
+}
+.sitation{
+	font-size: 22px;
+	line-height: 22px;
+	font-family: Myriad Pro;
+	font-style: italic;
+	padding: 32px;
+	color: #fff;
+}
+
+/*
+* works
+*/
+.indi_carousel_portfolio{
+	position: absolute;
+	bottom: 10px;
+	right: 4%;
+	left: auto;
+	z-index: 15;
+	width: 0px;
+	margin-left: -30%; 
+	padding-left: initial;
+	list-style: none;
+	text-align: initial;
+	top: 100px;
+}
+.flesh_carousel{
+	top: auto;
+	right: auto;
+	bottom: auto;
+}
+#works .slidework.row {
+margin-top: 90px;
+}
+#works span.glyphicon.icon_right.glyphicon-chevron-right, #works span.glyphicon.icon_left.glyphicon-chevron-left{
+	border: 4px solid #000;
+	line-height: 30px;
+	width: auto;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-size: 25px;
+}
+#works .carousel-control.right {
+left: auto;
+right: 0;
+}
+.portfolio{
+	padding-top: 65px;
+}
+#works .carousel-control{
+	width: 100%;
+	margin: 20px;
+}
